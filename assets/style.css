@@ -1,0 +1,189 @@
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto.ttf);
+}
+@font-face {
+  font-family: open sans;
+  src: url(fonts/OpenSans.ttf);
+}
+* {
+  margin: 0;
+}
+:root {
+  --primary-color: #2b2d42;
+  --secondary-color: #b2b2b2;
+  --tertiary-color: #e0d0c1;
+  --text-color: #ffffff;
+}
+body {
+  font-family: poppins;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+/* Global div style */
+
+.container {
+  background-image: url(images/Back-image1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.overlay {
+  border-image: fill 1
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.2));
+}
+/* Navigation bar style*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 9rem;
+}
+.navbar p {
+  color: var(--tertiary-color);
+  font-size: 1.9rem;
+  /*  text-shadow: -0.7px -0.7px 0 white, -0.7px 0.7px 0 white, 0.7px -0.7px 0 white,
+    0.7px 0.7px 0 white; */
+}
+.navbar ul {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.2rem;
+}
+.navbar li,
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+}
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+.navbar button {
+  background-color: var(--primary-color);
+  font-family: poppins;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  box-shadow: 0.5rem 0.3rem var(--primary-color);
+}
+button:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px); /* optional lift effect */
+}
+
+/* Hero section style */
+.herosec {
+  display: flex;
+  justify-content: center;
+  padding-top: 11rem;
+  align-items: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0;
+  font-family: roboto;
+  font-size: 3.8rem;
+  color: #e0d0c1;
+  font-weight: 600;
+}
+.hero p {
+  width: 55%;
+  margin: 0;
+  font-family: open sans;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.hero button {
+  background-color: var(--primary-color);
+  font-family: poppins;
+  margin-top: 1rem;
+  padding: 0.6rem 2rem;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+}
+span {
+  color: var(--primary-color);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  font-size: 5rem;
+}
+
+/* AVAILABLE HOUSES STYLE */
+
+.prop_con {
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+.prop_nav {
+  padding: 3rem 9rem;
+  background-color: #e0d0c1;
+}
+.prop_nav p,
+li a {
+  color: var(--primary-color);
+}
+
+/* Cards design */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 9rem;
+  gap: 2rem;
+}
+.card {
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+/* .card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+ */
