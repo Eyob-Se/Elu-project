@@ -79,8 +79,9 @@ a {
   text-decoration: none;
   color: var(--text-color);
   list-style: none;
+  transition: color 0.3s ease;
 }
-.navbar a:hover {
+.navbar ul a:hover {
   color: var(--secondary-color);
 }
 .navbar button {
@@ -90,9 +91,10 @@ a {
   border: 1px solid white;
   border-radius: 1.5rem;
   font-size: 1rem;
-  box-shadow: 0.5rem 0.3rem var(--primary-color);
+  transition: background 0.5s ease-in-out;
 }
 button:hover {
+  background-color: #16a085;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   transform: translateY(-2px); /* optional lift effect */
 }
@@ -134,6 +136,12 @@ button:hover {
   border: 1px solid white;
   border-radius: 1.5rem;
   font-size: 1rem;
+  transition: background 0.5s ease;
+}
+button:hover {
+  background-color: #16a085;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px); /* optional lift effect */
 }
 span {
   color: var(--primary-color);
@@ -146,6 +154,7 @@ span {
 
 .prop_con {
   height: 100vh;
+  overflow-y: auto;
   background-color: var(--primary-color);
 }
 .prop_nav {
@@ -161,29 +170,174 @@ li a {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin: 9rem;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  margin: 5rem 14rem 0rem 14rem;
+  gap: 4rem;
 }
 .card {
-  border-radius: 25px;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
-  justify-content: center;
-  align-items: center;
+  align-items: start;
+}
+.card h3,
+h4 {
+  padding-left: 2rem;
+}
+.card p {
+  padding-left: 2rem;
 }
 .card img {
   width: 100%;
-  height: 10rem;
+  max-height: 230px;
   object-fit: cover;
 }
-/* .card img {
+.spec {
+  color: var(--text-color);
   width: 100%;
-  height: 10rem;
-  object-fit: cover;
+  margin-top: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #313453;
 }
- */
+/* About us style */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.about-container p {
+  padding-top: 1rem;
+}
+.about-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 3rem 25rem 3rem 25rem;
+  gap: 2rem;
+}
+.ab-card {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.about-item i {
+  color: #2b2d42;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+.carousel-card {
+  color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--tertiary-color);
+}
+.carousel-card ul {
+  padding-top: 1rem;
+}
+.carousel-card li {
+  list-style: none;
+}
+/* FOoter style */
+.footer {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding: 3rem 1rem;
+  margin-top: 5rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-top {
+  margin-bottom: 1.5rem;
+}
+
+.footer p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-social {
+  margin: 1.5rem 0;
+}
+
+.footer-social a {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin: 0 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #1abc9c;
+}
+
+.footer-newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-newsletter input[type="email"] {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 250px;
+  max-width: 100%;
+}
+
+.footer-newsletter button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-newsletter button i {
+  margin-right: 5px;
+}
+
+.footer-newsletter button:hover {
+  background-color: #16a085;
+}

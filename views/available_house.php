@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/fonts/all.css">
+
     <title>Available house</title>
 </head>
 <body>
@@ -24,43 +26,66 @@
             <div class="card c1">
                 <img src="../assets/prop_img/h1.jpg" alt="House 1">
                 <h3>House 1</h3>
-                <p>Location: City Center</p>
-                <p>Price: $1200/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4><i class="fas fa-location-dot"></i> City Center</h4>
+                <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i> </i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
             </div>
             <div class="card c2">
                 <img src="../assets/prop_img/h2.jpg" alt="House 2">
                 <h3>House 2</h3>
-                <p>Location: Suburb</p>
-                <p>Price: $800/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4><i class="fas fa-location-dot"></i> Suburb</h4>
+                 <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
+               
             </div>
             <div class="card c3">
                 <img src="../assets/prop_img/h3.jpg" alt="House 3">
                 <h3>House 3</h3>
-                <p>Location: Downtown</p>
-                <p>Price: $1500/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4><i class="fas fa-location-dot"></i> <i class="fas fa-location-dot"></i> Downtown</h4>
+                 <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
+               
             </div>
             <div class="card c4">
                 <img src="../assets/prop_img/h4.jpg" alt="House 3">
                 <h3>House 3</h3>
-                <p>Location: Downtown</p>
-                <p>Price: $1500/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4> <i class="fas fa-location-dot"></i> Downtown</h4>
+                 <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
+               
             </div><div class="card c5">
                 <img src="../assets/prop_img/h5.jpg" alt="House 3">
                 <h3>House 3</h3>
-                <p>Location: Downtown</p>
-                <p>Price: $1500/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4><i class="fas fa-location-dot"></i> Downtown</h4>
+                 <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
+               
             </div>
             <div class="card c6">
                 <img src="../assets/prop_img/h6.jpg" alt="House 3">
                 <h3>House 3</h3>
-                <p>Location: Downtown</p>
-                <p>Price: $1500/month</p>
-                <button><a href="#">View Details</a></button>
+                <h4><i class="fas fa-location-dot"></i> Downtown</h4>
+                 <div class="spec">
+                    <p>bedroom <br><i class="fas fa-bed"></i></p>
+                    <p>bathroom <br><i class="fas fa-shower"></i></p>
+                    <p>area <br><i class="fas fa-ruler-combined"></i></p>
+                </div>
+               
             </div>
      
         </div>
@@ -68,5 +93,6 @@
 
         <!-- Add your content here -->
     </div>
+
 </body>
 </html>
