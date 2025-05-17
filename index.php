@@ -35,6 +35,37 @@
              </button>
            </div>
          </div>
+
+             <div class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-top">
+          <p>&copy; 2025 Rental System. All rights reserved.</p>
+          
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+    
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    
+        <div class="footer-newsletter">
+          <form action="#" method="post">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fa fa-paper-plane"></i> Subscribe</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
     
         </div>
 

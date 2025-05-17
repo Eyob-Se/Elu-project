@@ -62,7 +62,7 @@ To simplify the rental experience by providing a secure, efficient, and convenie
       <div class="footer-container">
         
         <div class="footer-top">
-          <p>&copy; 2025 Your Rental System Name. All rights reserved.</p>
+          <p>&copy; 2025 Rental System. All rights reserved.</p>
           
           <div class="footer-links">
             <a href="#">Privacy Policy</a>
