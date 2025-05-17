@@ -341,3 +341,100 @@ h4 {
 .footer-newsletter button:hover {
   background-color: #16a085;
 }
+
+/* login form and register */
+.login-page,
+.register-page {
+  font-family: roboto;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form,
+.register-form {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100rem;
+  max-width: 400px;
+}
+
+.login-form h2,
+.register-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 0.5rem;
+}
+
+.form-container input {
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-container button {
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary-color);
+  color: #000;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  align-self: center;
+}
+
+.form-container button:hover {
+  background-color: #999;
+}
+
+.cancelbtn {
+  background-color: #ccc;
+}
+
+.form-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+}
+
+.form-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+.register-form .form-container select {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.register-form .form-container select:focus {
+  box-shadow: 0 0 5px rgba(43, 45, 66, 0.5);
+}
