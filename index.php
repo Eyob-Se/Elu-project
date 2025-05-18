@@ -31,7 +31,7 @@
             rom real-time availability to seamless booking and tracking, our platform makes renting effortless.
              </p>
              <button>
-                <a href="available_house.php"> Explore </a>
+                <a href="views/available_house.php"> Explore </a>
              </button>
            </div>
          </div>

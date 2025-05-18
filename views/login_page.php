@@ -7,6 +7,7 @@ $back = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '../index.p
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/fonts/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
@@ -15,14 +16,14 @@ $back = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '../index.p
         <form action="POST" class="login-form">
         <h2>Login</h2>
         <div class="form-container">
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter your email" name="email" required>
+            <label for="email"><i class="fas fa-envelope"></i> <b>Email</b></label>
+            <input type="email" placeholder="Enter your email" autocomplete="off" name="email" required>
 
-            <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter your password" name="password" required>
+            <label for="password"><i class="fas fa-lock"></i> <b>Password</b></label>
+            <input type="password" placeholder="Enter your password" autocomplete="new password" name="password" required>
 
             <button type="submit">Login</button>
-            <button type="button" class="cancelbtn" onclick="window.location.href='<?php echo $back; ?>'">Cancel</button>
+            <button type="button" class="cancelbtn" onclick="window.location.href='../index.php'">Cancel</button>
         </div>
 
         <div class="form-links">
