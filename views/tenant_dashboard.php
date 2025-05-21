@@ -1,3 +1,7 @@
+<?php
+include '../config/auth_check.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +21,7 @@
                 <li><a href="available_house.php">Available house</a></li>
                 <li><a href="about_us.php">About us</a></li>
             </ul>
-            <button>
-                <a href="login_page.php">Logout</a>
-            </button>
+            <button class="btn" type="button" onclick="window.location.href='../controllers/logout.php'">Logout</button>
         </div>
         <div class="cards">
             <div class="card c1">

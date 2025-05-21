@@ -24,7 +24,7 @@
   <div class="top-bar">
     <input type="text" id="filterInput" placeholder="🔍 Filter by location, price, etc.">
     <button class="btn" id="openFormBtn">+ Upload New House</button>
-    <button class="btn logout">Logout</button>
+            <button class="btn" type="button" onclick="window.location.href='../controllers/logout.php'">Logout</button>
   </div>
 
   <!-- House Upload Form -->
@@ -32,27 +32,27 @@
     <div class="modal-content">
       <span class="close" id="closeFormBtn">&times;</span>
       <h3>Upload House</h3>
-      <form id="houseForm">
-        <label>Title</label>
-        <input type="text" placeholder="House Title" required />
-        
-        <label>Location</label>
-        <input type="text" placeholder="City, Area" required />
-        
-        <label>Price</label>
-        <input type="number" placeholder="Monthly Rent" required />
+<form id="houseForm" method="POST" enctype="multipart/form-data" action="../controllers/house_upload.php">
+  <label>Title</label>
+  <input type="text" name="title" placeholder="House Title" required />
 
-        <label>Bedrooms</label>
-        <input type="number" placeholder="e.g., 2" required />
+  <label>Location</label>
+  <input type="text" name="address" placeholder="City, Area" required />
 
-        <label>Description</label>
-        <textarea placeholder="Brief Description" row="3" required></textarea>
+  <label>Price</label>
+  <input type="number" name="price" placeholder="Monthly Rent" required />
 
-        <label>Upload Image</label>
-        <input type="file" accept="image/*" />
+  <label>Bedrooms</label>
+  <input type="number" name="bedrooms" placeholder="e.g., 2" required />
 
-        <button type="submit">Submit</button>
-      </form>
+  <label>Description</label>
+  <textarea name="description" placeholder="Brief Description" rows="3" required></textarea>
+
+  <label>Upload Image</label>
+  <input type="file" name="photos[]" multiple accept="image/*" required />
+
+  <button type="submit">Submit</button>
+</form>
     </div>
   </div>
 

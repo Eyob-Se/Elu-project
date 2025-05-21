@@ -16,9 +16,7 @@
                 <li><a href="views/available_house.php">Available house</a></li>
                 <li><a href="views/about_us.php">About us</a></li>
             </ul>
-            <button>
-                <a href="views/login_page.php">Login</a>
-            </button>
+            <button type="button" class="btn" onclick="window.location.href='./views/login_page.php'">Login</button>
             
         </div>
     
@@ -30,9 +28,7 @@
             Discover a smarter way to rent from apartments and vehicles to tools and more. Easy, fast, and secure rentals at your fingertips.
             rom real-time availability to seamless booking and tracking, our platform makes renting effortless.
              </p>
-             <button>
-                <a href="views/available_house.php"> Explore </a>
-             </button>
+             <button type="button" class="btn" onclick="window.location.href='./views/available_house.php'">Explore</button>
            </div>
          </div>
     

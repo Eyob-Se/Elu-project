@@ -131,7 +131,7 @@ button:hover {
   color: var(--primary-color);
 }
 
-.top-bar .btn {
+.btn {
   padding: 0.75rem 2rem;
   background: var(--primary-color);
   color: #fff;
@@ -384,4 +384,10 @@ button:hover {
 
 .footer-newsletter button:hover {
   background-color: #16a085;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
 }

@@ -63,3 +63,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// =========== Terms and Conditions ============
+
+function openTerms() {
+  document.getElementById("termsModal").style.display = "block";
+}
+
+function closeTerms() {
+  document.getElementById("termsModal").style.display = "none";
+}
+
+// Optional: close modal if clicked outside content
+window.onclick = function (event) {
+  const modal = document.getElementById("termsModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Add event listeners for approve/decline buttons (placeholder)
+document
+  .querySelectorAll(".approve-house")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("House Approved (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".decline-house")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("House Declined (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".approve-request")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Request Approved (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".decline-request")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Request Declined (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".send-to-owner")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Sent request to Owner (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".approve-tenant")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Tenant Request Approved (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".decline-tenant")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Tenant Request Declined (implement backend call)")
+    )
+  );
+document
+  .querySelectorAll(".generate-report")
+  .forEach((btn) =>
+    btn.addEventListener("click", () =>
+      alert("Report Generated and sent to Government User")
+    )
+  );

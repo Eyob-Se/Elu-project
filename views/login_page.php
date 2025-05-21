@@ -1,7 +1,3 @@
-<?php
-$back = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '../index.php'; // fallback to homepage or page it was redirected from
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +9,17 @@ $back = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '../index.p
 </head>
 <body>
     <div class="login-page">
-        <form action="POST" class="login-form">
+        <form action="../controllers/login.php" method="POST" class="login-form">
         <h2>Login</h2>
+
+        <?php if (isset($_GET['error'])): ?>
+    <p class="error">Invalid email or password.</p>
+<?php endif; ?>
+          <?php if (isset($_GET['registered'])): ?>
+    <p class="success">Registration successful! You can now log in.</p>
+<?php endif; ?>
+
+
         <div class="form-container">
             <label for="email"><i class="fas fa-envelope"></i> <b>Email</b></label>
             <input type="email" placeholder="Enter your email" autocomplete="off" name="email" required>
@@ -35,4 +40,5 @@ $back = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '../index.p
     </div>
     
 </body>
+
 </html>
